@@ -1,3 +1,7 @@
+WSJoyStick.onKey(KEY.A, function () {
+    radio.sendValue("name", 10)
+    basic.showArrow(ArrowNames.North)
+})
 radio.setGroup(3)
 basic.forever(function () {
     if (WSJoyStick.Listen_Dir(DIR.U)) {
